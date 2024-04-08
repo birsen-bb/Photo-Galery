@@ -31,7 +31,7 @@ h1{
 ul{
     display:block;
     background-color: antiquewhite;
-    width: 92%;
+    width: 86%;
     background-color: rgb(237, 226, 206);
     padding: 2cm;
    
@@ -71,7 +71,7 @@ p{
     border-radius: 10px;
     float: right;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 50px;
    
 
 }
@@ -96,46 +96,30 @@ clear: right;
 .right{
     float: right;
 }
-
-main{
+.right::after {
+    content: "";
     clear: both;
-    margin-top: 30px
+    display: table;
+    }
 
-}
-
-.div1{
-    display:inline-block;
-    float:left;
-   
-}
-
-
-.text{
-    display: inline-block;
-    clear: both;
-    float: left;
-    width: 780px;
-    height: 50px;
-    background-color: rgb(221, 224, 223);
-    margin-left: 85px;
-    text-align: center;
-    padding-top: 25px;
-    border-radius: 10px;
-}
 .seasons{
-    clear: left;
-    position: relative;
-    display: inline-block;
+    display:inline-block;
     float: left;
-    width: 780px;
-    height:580px;
-    margin: 30px;
-    margin-left: 85px;
-    margin-bottom: 70px;
-    margin-top: 30px;
+    width: 42%;
+    height:400px;
+   margin: 70px 2px 25px 70px;
+   padding: 5px;
     border: 1px solid gray;
     border-radius: 10px;
-    box-shadow: 5px 10px 8px #888888;   
+    box-shadow: 5px 10px 8px #888888; 
+
+}
+
+.div1::after{
+    content:"";
+    clear: both;
+    display: table;
+
 }
 #btnContainer{
     text-align: center;
@@ -143,9 +127,8 @@ main{
 
 }
 button{
-    clear: both;
-    display:inline-block;
-    justify-content: center;
+    display: inline=block;
+
     text-align:  center;
     width: 250px;
     height: 40px;
